@@ -17,7 +17,7 @@ netmask="255.255.255.0"
 dhcp_range_start="192.168.1.2"
 dhcp_range_end="192.168.1.100"
 dhcp_time="12h"
-eth="eth0"
+eth="eth1"
 wlan="wlan0"
 
 sudo systemctl start network-online.target &> /dev/null
