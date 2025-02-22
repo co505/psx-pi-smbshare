@@ -126,6 +126,8 @@ EOS
 sudo /etc/init.d/smbd restart
 EOF
 
+sleep 10
+
 sudo sed -i "s/userplaceholder/${USER}/g" /usr/local/bin/automount.sh
 
 # Make script executable
