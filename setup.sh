@@ -18,11 +18,11 @@
 
 USER=`whoami`
 
-# Make sure we're not root otherwise the paths will be wrong
-if [ $USER = "root" ]; then
-  echo "Do not run this script as root or with sudo"
-  exit 1
-fi
+# # Make sure we're not root otherwise the paths will be wrong
+# if [ $USER = "root" ]; then
+#   echo "Do not run this script as root or with sudo"
+#   exit 1
+# fi
 
 if whiptail --yesno "Would you like to enable ps3netsrv for PS3 support? (SMB is enabled either way for PS2 support etc.)" 8 55; then
   PS3NETSRV=true
