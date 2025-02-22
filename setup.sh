@@ -132,7 +132,7 @@ chmod 755 /home/${USER}/automount-usb.sh
 /home/${USER}/automount-usb.sh
 
 # Set samba-init + ps3netsrv, wifi-to-eth-route, setup-wifi-access-point, and XLink Kai to run on startup
-{ echo -e "@reboot sudo bash /usr/local/bin/samba-init.sh\n@reboot sudo bash /home/${USER}/wifi-to-eth-route.sh && sudo bash /home/${USER}/setup-wifi-access-point.sh\n@reboot bash /home/${USER}/launchkai.sh"; } | crontab -u ${USER} -
+{ echo -e "@reboot sudo bash /usr/local/bin/samba-init.sh\n@reboot sudo bash ./wifi-to-eth-route.sh && sudo bash ./setup-wifi-access-point.sh\n@reboot bash ./launchkai.sh"; } | crontab -u ${USER} -
 
 # Not a bad idea to reboot
 sudo reboot
